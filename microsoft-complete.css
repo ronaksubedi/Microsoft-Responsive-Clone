@@ -239,7 +239,7 @@ ul {
 }
 
 .nav-menu a:hover {
-  color: #bbbbbb;
+  color: #7a7a7a;
 }
 
 .nav-menu a:focus {
@@ -266,7 +266,7 @@ ul {
 }
 
 .more-btn button:hover {
-  color: #bbbbbb;
+  color: #7a7a7a;
 }
 
 .more-btn button:focus {
@@ -300,7 +300,7 @@ ul {
 }
 
 .all-microsoft-dropdown button:hover {
-  color: #bbbbbb;
+  color: #7a7a7a;
 }
 
 .search-btn,
@@ -316,7 +316,7 @@ ul {
 
 .search-btn:hover,
 .cart-btn:hover {
-  color: #bbbbbb;
+  color: #7a7a7a;
 }
 
 .signin-btn {
@@ -333,7 +333,7 @@ ul {
 }
 
 .signin-btn:hover {
-  color: #bbbbbb;
+  color: #7a7a7a;
 }
 
 .mobile-actions {
