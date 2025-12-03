@@ -774,6 +774,87 @@ ul {
   margin-top: auto;
 }
 
+/* ===== AI AND COPILOT SECTION ===== */
+.ai-copilot-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.ai-copilot-section h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #323130;
+  line-height: 1.2;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.ai-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.ai-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.ai-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.ai-card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.ai-card:hover .ai-card-image img {
+  transform: scale(1.05);
+}
+
+.ai-card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.ai-card-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #323130;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.ai-card-content p {
+  font-size: 15px;
+  color: #605e5c;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.ai-card-content .btn-primary {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
 /* ===== FOLLOW MICROSOFT ===== */
 .follow-microsoft {
   padding: 80px 0;
@@ -857,16 +938,21 @@ ul {
   height: 40px;
   width: 40px;
   border-radius: 20px;
-  background-color: #0078d4;
-  color: #ffffff;
+  background: #ffffff;
+  color: #0078d4;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .help-search button:hover {
-  background-color: #106ebe;
+  background: #f3f2f1;
+  color: #005a9e;
+  transform: scale(1.05);
 }
 
 .help-suggestions {
@@ -1033,6 +1119,10 @@ ul {
   .business-cards-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .ai-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Medium Desktop (768px - 1083px) */
@@ -1082,6 +1172,19 @@ ul {
 
   .business-cards-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ai-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .ai-copilot-section {
+    padding: 60px 0;
+  }
+
+  .ai-copilot-section h2 {
+    font-size: 32px;
   }
 
   .help-section {
@@ -1188,6 +1291,19 @@ ul {
   .business-cards-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+
+  .ai-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .ai-copilot-section {
+    padding: 50px 0;
+  }
+
+  .ai-copilot-section h2 {
+    font-size: 32px;
   }
 
   .business-text h2 {
@@ -1365,6 +1481,32 @@ ul {
   .business-cards-grid {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  .ai-copilot-section {
+    padding: 40px 0;
+  }
+
+  .ai-copilot-section h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .ai-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .ai-card-content {
+    padding: 20px;
+  }
+
+  .ai-card-content h3 {
+    font-size: 18px;
+  }
+
+  .ai-card-content p {
+    font-size: 14px;
   }
 
   .follow-microsoft {
